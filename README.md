@@ -1,17 +1,70 @@
-# rasalconnect
+# TP Flutter – RASALCONNECT
 
-A new Flutter project.
+Ce projet Flutter a été réalisé dans le cadre d’un TP ayant pour objectif de découvrir et maîtriser les bases du développement mobile avec **Flutter**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Objectif
 
-A few resources to get you started if this is your first Flutter project:
+Le but de ce TP est de :
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Comprendre le fonctionnement de Flutter et son architecture.
+- Apprendre à créer une application mobile multiplateforme.
+- Mettre en place une communication en **peer-to-peer (P2P)** pour une application de messagerie simple.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# rasalconnect
+---
+
+## 💬 Projet : RASALCONNECT
+
+**RASALCONNECT** est une application de messagerie P2P permettant à deux utilisateurs de se connecter directement et d’échanger des messages en temps réel.
+
+---
+
+## 📁 Structure du projet – Fichiers clés
+
+Voici les fichiers principaux de l’application :
+
+| Fichier                      | Rôle                                                                 |
+|-----------------------------|----------------------------------------------------------------------|
+| `lib/screens/chat_screen.dart`  | Interface de messagerie : permet d’envoyer et recevoir des messages. |
+| `lib/screens/join_screen.dart`  | Écran d'accueil : permet à un utilisateur de rejoindre une session via un ID. |
+| `server.js`                     | Serveur Node.js (WebSocket) : établit la connexion entre deux utilisateurs. |
+
+---
+
+## Fonctionnalités implémentées
+
+- Connexion P2P entre deux utilisateurs via un identifiant.
+- Interface de chat en temps réel. (en cours de débogage pour ne pas dire non fonctionnel haha)
+- Communication avec un serveur WebSocket en Node.js.
+
+---
+
+### 1. Lancer le serveur WebSocket
+
+```bash
+node server.js
+```
+
+### 2. Run l'application dans Flutter
+
+
+---
+
+### EXPLICATION 
+
+Le serveur initialise l’échange (offre/réponse/ICE) entre deux pairs pour qu'ils puissent établir une connexion P2P directe sans passer ensuite par le serveur :
+
+![Screenshot from 2025-06-08 18-44-35](https://github.com/user-attachments/assets/eda1e9c7-3cd3-46a8-b817-e8a5af8d2edb)
+
+Ensuite, une proposition de rejoindre est proposé au pair distant :
+
+![Screenshot from 2025-06-08 18-43-41](https://github.com/user-attachments/assets/0c7008c8-f2b7-48ae-9d45-e580f9742336)
+
+Pour finir, la connexion est établie, les utilisateurs peuvent s'envoyer des messages, normalement :
+
+![Screenshot from 2025-06-08 18-43-57](https://github.com/user-attachments/assets/c3d9f53f-130a-41c1-aba5-c07d3e0eb2e4)
+
+---
+
+
