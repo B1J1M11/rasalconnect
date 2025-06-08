@@ -69,7 +69,7 @@ Pour finir, la connexion est établie, les utilisateurs peuvent s'envoyer des me
 
 ### AXE D'AMELIORATION :
 
-Une application qui fonctionne 🤡
+L'application est capable d'établir une connexion entre 2 pairs, refuser ou accepter la demande coté utilisateur, mais ensuite les messages ne s'envoient pas 🤡
 
 
 
