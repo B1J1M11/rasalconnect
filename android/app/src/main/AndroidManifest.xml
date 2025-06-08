@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-// Donne les permission à webRTC d'utiliser la caméra, l'audio et la connexion à l'appareil
+<!--Donne les permission à webRTC d'utiliser la caméra, l'audio et la connexion à l'appareil-->
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 <uses-permission android:name="android.permission.INTERNET"/>
