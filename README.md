@@ -53,7 +53,7 @@ node server.js
 
 ### EXPLICATION 
 
-Le serveur initialise l’échange (offre/réponse/ICE) entre deux pairs pour qu'ils puissent établir une connexion P2P directe sans passer ensuite par le serveur :
+Le serveur initialise l’échange (offre/réponse/ICE) entre deux pairs (définit par des ID) pour qu'ils puissent établir une connexion P2P directe sans passer ensuite par le serveur :
 
 ![Screenshot from 2025-06-08 18-44-35](https://github.com/user-attachments/assets/eda1e9c7-3cd3-46a8-b817-e8a5af8d2edb)
 
@@ -66,5 +66,11 @@ Pour finir, la connexion est établie, les utilisateurs peuvent s'envoyer des me
 ![Screenshot from 2025-06-08 18-43-57](https://github.com/user-attachments/assets/c3d9f53f-130a-41c1-aba5-c07d3e0eb2e4)
 
 ---
+
+### AXE D'AMELIORATION :
+
+Une application qui fonctionne 🤡
+
+
 
 
